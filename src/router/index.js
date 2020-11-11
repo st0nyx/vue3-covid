@@ -1,6 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import CountryTable from "@/components/CountryTable";
+import Vaccine from "@/views/Vaccine";
+import Therapeutics from "@/views/Therapeutics";
+import CountryAllCharts from "@/components/CountryAllCharts";
 
 Vue.use(VueRouter);
 
@@ -11,13 +15,27 @@ const routes = [
     component: Home
   },
   {
-    path: "/about",
-    name: "About",
+    path: "/vaccine",
+    name: "Vaccine",
+    component: Vaccine
+  },
+  {
+    path: "/therapeutics",
+    name: "Therapeutics",
+    component: Therapeutics
+  },
+  {
+    path: "/allcharts",
+    name: "allcharts",
+    component: CountryAllCharts
+  },
+  {
+    path: "/country-table",
+    name: "country-table",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    component: CountryTable
   }
 ];
 
