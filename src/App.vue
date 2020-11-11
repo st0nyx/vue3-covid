@@ -36,16 +36,19 @@
     <transition name="fade" mode="out-in">
       <router-view />
     </transition>
+    <Footer />
   </v-app>
 </template>
 
 <script>
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 export default {
   name: "App",
 
   components: {
-    NavBar
+    NavBar,
+    Footer
   },
 
   data: () => ({
