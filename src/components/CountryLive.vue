@@ -25,8 +25,10 @@
             <th class="title">{{ formatNumber(sumField("todayCases")) }}</th>
             <th class="title">{{ formatNumber(sumField("deaths")) }}</th>
             <th class="title">{{ formatNumber(sumField("todayDeaths")) }}</th>
-            <th class="title">{{ formatNumber(sumField("casesPerOneMillion")) }}</th>
-            <th class="title">{{ formatNumber(sumField("deathsPerOneMillion")) }}</th>
+<!--            <th class="title">{{ formatNumber(sumField("casesPerOneMillion")) }}</th>-->
+<!--            <th class="title">{{ formatNumber(sumField("deathsPerOneMillion")) }}</th>-->
+            <th></th>
+            <th></th>
             <th class="title">{{ formatNumber(sumField("critical")) }}</th>
             <th class="title">{{ formatNumber(sumField("tests")) }}</th>
             <th class="title">{{ formatNumber(sumField("population")) }}</th>

@@ -24,6 +24,11 @@
             <th class="title">{{ formatNumber(sumField("cases")) }}</th>
             <th class="title">{{ formatNumber(sumField("todayCases")) }}</th>
             <th class="title">{{ formatNumber(sumField("deaths")) }}</th>
+            <th class="title">{{ formatNumber(sumField("todayDeaths")) }}</th>
+<!--            <th class="title">{{ formatNumber(sumField("casesPerOneMillion")) }}</th>-->
+<!--            <th class="title">{{ formatNumber(sumField("deathsPerOneMillion")) }}</th>-->
+            <th></th>
+            <th></th>
             <th class="title">{{ formatNumber(sumField("critical")) }}</th>
             <th class="title">{{ formatNumber(sumField("tests")) }}</th>
             <th class="title">{{ formatNumber(sumField("population")) }}</th>
@@ -38,6 +43,9 @@
             <td>{{ formatNumber(item.cases) }}</td>
             <td>{{ formatNumber(item.todayCases) }}</td>
             <td>{{ formatNumber(item.deaths) }}</td>
+            <td>{{ formatNumber(item.todayDeaths) }}</td>
+            <td>{{ formatNumber(item.casesPerOneMillion) }}</td>
+            <td>{{ formatNumber(item.deathsPerOneMillion) }}</td>
             <td>{{ formatNumber(item.critical) }}</td>
             <td>{{ formatNumber(item.tests) }}</td>
             <td>{{ formatNumber(item.population) }}</td>
@@ -81,10 +89,18 @@ export default {
           text: "Deaths",
           value: "deaths"
         },
-        // {
-        //   text: "Positive Rate",
-        //   value: "positiveRate"
-        // },
+        {
+          text: "Today Deaths",
+          value: "todayDeaths"
+        },
+        {
+          text: "Cases per Million",
+          value: "casesPerOneMillion"
+        },
+        {
+          text: "Deaths per Million",
+          value: "deathsPerOneMillion"
+        },
         {
           text: "Critical",
           value: "critical"
@@ -98,6 +114,7 @@ export default {
           value: "population"
         }
       ],
+
 
       countries: []
     };

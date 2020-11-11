@@ -77,23 +77,6 @@
           </v-flex>
         </v-col>
         <v-col cols="10">
-          <!--          <v-container>-->
-          <!--            <h3>**** Click on play buttons to see animations in action ****</h3>-->
-
-          <!--            <v-row>-->
-          <!--              <v-col cols="6">-->
-          <!--                <iframe src="https://ourworldindata.org/grapher/covid-tests-cases-deaths-per-million?tab=chart&stackMode=absolute&time=2020-03-07..latest&country=~CHE&region=World" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>-->
-
-          <!--              </v-col>-->
-          <!--              <v-col col="6>">-->
-          <!--                <iframe src="https://ourworldindata.org/grapher/covid-tests-cases-deaths-per-million?tab=chart&stackMode=absolute&time=2020-03-07..latest&country=~CHE&region=World" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>-->
-
-          <!--              </v-col>-->
-          <!--            </v-row>-->
-          <!--          </v-container>-->
-          <!--          Death Rate World Avarage: {{ formatNumber2(deathRate) }} %-->
-          <!--          Infection Rate World: {{ formatNumber2(infectedRate) }} %-->
-          <!--          <CountryAllCharts />-->
           <h3>**** Click on play buttons to see animations in action ****</h3>
           <iframe
             src="https://ourworldindata.org/coronavirus-data-explorer?yScale=log&zoomToSelection=true&time=2020-02-15..2020-02-26&country=USA~GBR~BRA~DEU~ITA~CHE~BEL~FRA&region=World&casesMetric=true&interval=smoothed&aligned=true&perCapita=true&smoothing=7&pickerMetric=location&pickerSort=asc"
@@ -101,7 +84,7 @@
             style="width: 100%; height: 600px; border: 0px none;"
           ></iframe>
           <iframe
-            src="https://ourworldindata.org/grapher/covid-tests-cases-deaths-per-million?tab=chart&stackMode=absolute&time=2020-03-07..latest&country=~CHE&region=World"
+            src="https://ourworldindata.org/grapher/covid-deaths-per-million-vs-days-since-exemplar?minPopulationFilter=5000000&time=earliest..2020-02-27&country=CHE~SWE~FRA~DEU~ITA~ESP~BEL"
             loading="lazy"
             style="width: 100%; height: 600px; border: 0px none;"
           ></iframe>
